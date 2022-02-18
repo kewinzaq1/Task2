@@ -76,7 +76,7 @@ console.log("Tuples:", tuples([1, 2, 3], [4, 5, 6, 7]));
 // example inputs ['a', 'b', 'c', 'd'], { a: { b: { c: { d: '23' } } } }
 // example output '23'
 const pathTo = (path, object) =>
-  path.reduce((object, key) => object?.[key], object);
+  path.reduce((object, key) => object[key], object);
 
 console.log("--------------------------------------");
 console.log(
